@@ -27,7 +27,7 @@ model Product {
   id          String @id @default(uuid())
   name        String
   description String
-  price       Int
+  price       Float
 
   // Relations
   User   User   @relation(fields: [userId], references: [id])
